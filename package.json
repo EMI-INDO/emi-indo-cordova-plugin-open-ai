@@ -1,0 +1,32 @@
+{
+  "name": "emi-indo-cordova-plugin-open-ai",
+  "version": "0.0.1",
+  "description": "Cordova Plugin for using OpenAI's GPT apis. Supports GPT-3, ChatGPT, and GPT-4. ( Requires third party services https://openai.com/ that charge money )",
+  "cordova": {
+    "id": "emi-indo-cordova-plugin-open-ai",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EMI-INDO/emi-indo-cordova-plugin-openai.git"
+  },
+   "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "javascript",
+    "OpenAI",
+    "GPT-3",
+    "ChatGPT",
+    "GPT-4",
+    "emi-indo-cordova-plugin-openai",
+    "construct 3"
+  ],
+  "author": "EMI INDO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EMI-INDO/emi-indo-cordova-plugin-openai/issues"
+  },
+  "homepage": "https://github.com/EMI-INDO/emi-indo-cordova-plugin-openai#readme"
+}

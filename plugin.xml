@@ -1,0 +1,28 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android" 
+id="emi-indo-cordova-plugin-open-ai" version="0.0.1">
+
+<name>emiOpenAiPlugin</name>
+<description>Cordova Plugin for using OpenAI's GPT apis. Supports GPT-3, ChatGPT, and GPT-4. ( Requires third party services https://openai.com/ that charge money )</description>
+	<author>EMI INDO</author>
+	<license>ISC</license>
+	
+<js-module name="emiOpenAiPlugin" src="www/emiOpenAiPlugin.js">
+<clobbers target="cordova.plugins.emiOpenAiPlugin"/>
+</js-module>
+
+<platform name="android">
+
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="emiOpenAiPlugin">
+<param name="android-package" value="emi.indo.cordova.plugin.open.ai.emiOpenAiPlugin"/>
+</feature>
+</config-file>
+
+<config-file parent="/*" target="AndroidManifest.xml"/>
+<source-file src="src/android/emiOpenAiPlugin.java" target-dir="src/emi/indo/cordova/plugin/open-ai"/>
+
+<framework src="com.squareup.okhttp3:okhttp:4.10.0" />
+
+</platform>
+</plugin>
