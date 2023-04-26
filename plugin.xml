@@ -21,8 +21,8 @@ id="emi-indo-cordova-plugin-open-ai" version="0.0.1">
 
 <config-file parent="/*" target="AndroidManifest.xml"/>
 <source-file src="src/android/emiOpenAiPlugin.java" target-dir="src/emi/indo/cordova/plugin/open-ai"/>
-
-<framework custom="true" src="src/android/okhttp3.gradle" type="gradleReference" />
+	
+<framework src="src/android/okhttp.gradle" custom="true" type="gradleReference" />
 
 </platform>
 </plugin>
