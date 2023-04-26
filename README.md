@@ -43,7 +43,7 @@ cordova plugin rm emi-indo-cordova-plugin-open-ai
 let _getCompletionsRequest = () => {
     cordova.plugins.emiOpenAiPlugin.completions(
     message = "Hi? make me html code", // string
-    apiKey = "Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",  // Bearer apiKey https://platform.openai.com/
+    apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",  // apiKey https://platform.openai.com/
 
     (result) => { alert(result) },
     (error) => { alert(error)
