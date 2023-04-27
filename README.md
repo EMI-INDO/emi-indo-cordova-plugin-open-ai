@@ -37,6 +37,7 @@ cordova plugin rm emi-indo-cordova-plugin-open-ai
 
 ## Completions
 
+[Example ](https://github.com/EMI-INDO/emi-indo-cordova-plugin-open-ai/blob/main/example/index.html) - index.html:
 
 ```sh
 
