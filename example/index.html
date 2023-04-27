@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script type="text/javascript" src="cordova.js"></script>
+</head>
+<body>
+
+<script>
+
+
+
+
+let _getCompletionsRequest = () => {
+    cordova.plugins.emiOpenAiPlugin.completions(
+    message = "Hi? make me html code", // string
+    apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",  // apiKey https://platform.openai.com/
+
+    (result) => { alert(result) },
+    (error) => { alert(error)
+
+    });
+}
+
+// call _getCompletionsRequest();
+
+
+
+
+document.addEventListener("deviceready", function(){
+
+
+
+}, false);
+</script>
+
+
+<p> <button onclick="_getCompletionsRequest();"> get Completions Request</button></p>
+
+
+</body>
+</html>
