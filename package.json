@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EMI-INDO/emi-indo-cordova-plugin-openai.git"
+    "url": "git+https://github.com/EMI-INDO/emi-indo-cordova-plugin-open-ai.git"
   },
    "keywords": [
     "ecosystem:cordova",
@@ -20,13 +20,13 @@
     "GPT-3",
     "ChatGPT",
     "GPT-4",
-    "emi-indo-cordova-plugin-openai",
+    "emi-indo-cordova-plugin-open-ai",
     "construct 3"
   ],
   "author": "EMI INDO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EMI-INDO/emi-indo-cordova-plugin-openai/issues"
+    "url": "https://github.com/EMI-INDO/emi-indo-cordova-plugin-open-ai/issues"
   },
-  "homepage": "https://github.com/EMI-INDO/emi-indo-cordova-plugin-openai#readme"
+  "homepage": "https://github.com/EMI-INDO/emi-indo-cordova-plugin-open-ai#readme"
 }
