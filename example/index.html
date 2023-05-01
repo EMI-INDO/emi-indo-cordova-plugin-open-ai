@@ -9,18 +9,40 @@
 
 
 
-let _getCompletionsRequest = () => {
-    cordova.plugins.emiOpenAiPlugin.completions(
-    message = "Hi? make me html code", // string
-    apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",  // apiKey https://platform.openai.com/
-
+let _Completion = () => {
+    cordova.plugins.emiOpenAiPlugin.completions(  
+	apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",  // apiKey https://platform.openai.com/
+	timeOut = 0, //set this to 60, If error Failed to load response due to timeout
+    prompt = "Hi? make me html code", // string
+    max_tokens = 4000,
+    temperature = 0,
+	
     (result) => { alert(result) },
     (error) => { alert(error)
 
+    
     });
 }
 
-// call _getCompletionsRequest();
+// call _Completion();
+
+
+
+let _chat = () => {
+    cordova.plugins.emiOpenAiPlugin.chat(  
+	apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",  // apiKey https://platform.openai.com/
+	timeOut = 0, //set this to 60, If error Failed to load response due to timeout
+    role = "user", // The role of the author of this message. One of system, user, or assistant.
+    content = "Make me coffee",
+	
+    (result) => { alert(result) },
+    (error) => { alert(error)
+
+    
+    });
+}
+
+// call _chat();
 
 
 
@@ -33,7 +55,9 @@ document.addEventListener("deviceready", function(){
 </script>
 
 
-<p> <button onclick="_getCompletionsRequest();"> get Completions Request</button></p>
+<p> <button onclick="_Completion();">_Completion</button></p>
+
+<p> <button onclick="_chat();">_chat</button></p>
 
 
 </body>
